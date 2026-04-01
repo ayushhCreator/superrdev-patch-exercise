@@ -31,7 +31,7 @@ export default function TaskTable({ tasks, loading, error }) {
               <div className="task-desc">{task.description}</div>
             </td>
             <td>
-              <span className={`status-badge ${task.status.toLowerCase()}`}>{task.status}</span>
+              <span className={`status-badge ${task.status?.toLowerCase()}`}>{task.status}</span>
             </td>
             <td>{task.priority}</td>
             <td>{task.assignee || '\u2014'}</td>
